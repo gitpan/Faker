@@ -1,17 +1,14 @@
 # ABSTRACT: Extensible Fake Data Generator
 package Faker;
 
-use 5.14.0;
-use feature 'unicode_strings';
-use Moo;
-use Function::Parameters;
+use Bubblegum;
 use Faker::Factory;
 
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 
-method maker (@arguments) {
-    return Faker::Factory->new(@arguments)->create;
+sub maker {
+    shift && return Faker::Factory->new(@_)->create;
 }
 
 1;
@@ -26,7 +23,7 @@ Faker - Extensible Fake Data Generator
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 
@@ -56,7 +53,7 @@ semantics.
 
     $fake->paragraph;
     # Rerum atque repellat voluptatem quia rerum. Numquam excepturi beatae sint
-    # laudantium consequatur. Magni occaecati itaque sint et sit tempore. Nesciunt
+    # laudantium consequatur. Magni occaecati itaque sint et sit tempore. Nescit
     # amet quidem. Iusto deleniti cum autem ad quia aperiam.
 
     for (0..10) {

@@ -8,7 +8,6 @@ README
 README.mkdn
 cpanfile
 lib/Faker.pm
-lib/Faker/Exception.pm
 lib/Faker/Factory.pm
 lib/Faker/Generator.pm
 lib/Faker/Generator/Null.pm
@@ -32,7 +31,6 @@ lib/Faker/Role/Data.pm
 lib/Faker/Role/Provider.pm
 lib/Faker/Role/Utility.pm
 t/faker.t
-t/faker/exception.t
 t/faker/factory.t
 t/faker/generator.t
 t/faker/generator/null.t
