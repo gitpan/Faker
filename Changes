@@ -1,6 +1,9 @@
 Changelog for Faker
 
-0.05 2014-02-17T06:34:56
+0.06 2014-02-22T07:42:12
+ - Miscellaneous cleanup and removed given/when usage breaking 5.16+.
+
+0.05 2014-02-17T06:34:04
  - Refactor and Fixed en_US last names with apostrophes
 
 0.04 2014-02-03T01:33:00
