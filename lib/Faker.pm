@@ -4,7 +4,7 @@ package Faker;
 use Bubblegum;
 use Faker::Factory;
 
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 
 sub maker {
@@ -23,7 +23,7 @@ Faker - Extensible Fake Data Generator
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 DESCRIPTION
 
