@@ -1,6 +1,11 @@
 Changelog for Faker
 
-0.07 2014-02-27T05:07:06
+0.08 2014-03-21T18:06:16
+ - Updated Makefile and README.
+ - Modified to avoid breaking changes in Bubblegum 0.20.
+ - Many miscellaneous cosmetic changes.
+
+0.07 2014-02-27T05:06:33
  - Updated Makefile and README.
  - Added dashify routine and enhanced the Internet provider.
  - Fixed bug in company data lookup.

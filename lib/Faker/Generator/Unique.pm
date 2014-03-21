@@ -1,24 +1,25 @@
 package Faker::Generator::Unique;
 
 use Bubblegum::Class;
-use Bubblegum::Syntax -types, -typesof, 'raise';
+use Bubblegum::Constraints -minimal;
+use Bubblegum::Functions 'raise';
 
 has generator => (
     is       => 'ro',
-    isa      => typeof_obj,
+    isa      => _obj,
     required => 1
 );
 
 has max_retries => (
     is      => 'ro',
-    isa     => typeof_str,
+    isa     => _str,
     default => 10000
 );
 
 my $values = {};
 
 sub AUTOLOAD {
-    my $self = type_obj shift;
+    my $self = _obj shift;
     my ($package, $formatter) =
         split /::(\w+)$/, our $AUTOLOAD;
 
